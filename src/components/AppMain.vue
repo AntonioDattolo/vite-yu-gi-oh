@@ -28,7 +28,7 @@ export default {
   <header>
     <AppHeader />
   </header>
-  <main class="container">
+  <main class="container myBg">
 
     <section class="d-flex justify-content-between flex-wrap p-3">
       <AppMainCard v-for="card in cards" :cards="card"/>
@@ -38,5 +38,8 @@ export default {
 </template>
 
 <style scoped>
-
+.myBg{
+  background-color: rgb(105, 105, 104);
+  border-radius: 35px;
+}
 </style>

@@ -26,7 +26,7 @@ export default {
 </script>
 
 <template>
-    <div class="card myWidth">
+    <div class="card myWidth text-white">
         <img :src="cards.card_images[0].image_url" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title"> {{ cards.name }}</h5>
@@ -43,6 +43,7 @@ export default {
 <style scoped>
 .myWidth{
     width: calc((100% / 5) - 1.5rem);
+    background-color: transparent;
+    border: none;
 }
-
 </style>
