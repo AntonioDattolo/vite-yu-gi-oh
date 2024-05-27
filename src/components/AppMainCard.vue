@@ -26,18 +26,18 @@ export default {
 </script>
 
 <template>
-    <div class="card myWidth text-white">
+     <div class="card myWidth text-white">
         <img :src="cards.card_images[0].image_url" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title"> {{ cards.name }}</h5>
             <p class="card-text">{{ cards.type }}</p>
 
         </div>
-    </div>
+    </div> 
     <!-- <pre>
-    {{ cards.type }}
+    {{ cards.name }}
 
-</pre> -->
+</pre>  -->
 </template>
 
 <style scoped>

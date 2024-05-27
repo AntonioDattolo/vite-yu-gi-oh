@@ -1,13 +1,16 @@
-let cards = [
-    {
-        name: "\"A\" Cell Breeding Device",
-        type: "Spell Card",
-        frameType: "spell",
-        desc: "During each of your Standby Phases, put 1 A-Counter on 1 face-up monster your opponent controls.",
-        race: "Continuous",
-        archetype: "Alien",
-        ygoprodeck_url: "https://ygoprodeck.com/card/a-cell-breeding-device-9766",
-        card_images:
+import { reactive } from 'vue';
+let myData = reactive({
+
+    cards : [
+        {
+            name: "\"A\" Cell Breeding Device",
+            type: "Spell Card",
+            frameType: "spell",
+            desc: "During each of your Standby Phases, put 1 A-Counter on 1 face-up monster your opponent controls.",
+            race: "Continuous",
+            archetype: "Alien",
+            ygoprodeck_url: "https://ygoprodeck.com/card/a-cell-breeding-device-9766",
+            card_images:
             [
                 {
                     image_url: "https://images.ygoprodeck.com/images/cards/34541863.jpg",
@@ -15,8 +18,8 @@ let cards = [
                     image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/34541863.jpg",
                 },
             ],
-    },
-    {
+        },
+        {
         name: '"A" Cell Incubator',
         type: "Spell Card",
         frameType: "spell",
@@ -25,30 +28,30 @@ let cards = [
         archetype: "Alien",
         ygoprodeck_url: "https://ygoprodeck.com/card/a-cell-incubator-8856",
         card_images:
-            [
-                {
+        [
+            {
                     image_url: "https://images.ygoprodeck.com/images/cards/64163367.jpg",
                     image_url_small: "https://images.ygoprodeck.com/images/cards_small/64163367.jpg",
                     image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/64163367.jpg",
                 },
             ],
-    },
-    {
-        name: '"A" Cell Recombination Device',
-        type: "Spell Card",
-        frameType: "spell",
-        desc: 'Target 1 face-up monster on the field; send 1 "Alien" monster from your Deck to the Graveyard, and if you do, place A-Counters on that monster equal to the Level of the sent monster. During your Main Phase, except the turn this card was sent to the Graveyard: You can banish this card from your Graveyard; add 1 "Alien" monster from your Deck to your hand.',
+        },
+        {
+            name: '"A" Cell Recombination Device',
+            type: "Spell Card",
+            frameType: "spell",
+            desc: 'Target 1 face-up monster on the field; send 1 "Alien" monster from your Deck to the Graveyard, and if you do, place A-Counters on that monster equal to the Level of the sent monster. During your Main Phase, except the turn this card was sent to the Graveyard: You can banish this card from your Graveyard; add 1 "Alien" monster from your Deck to your hand.',
         race: "Quick-Play",
         archetype: "Alien",
         ygoprodeck_url: "https://ygoprodeck.com/card/a-cell-recombination-device-7614",
         card_images:
-            [
-                {
-                    image_url: "https://images.ygoprodeck.com/images/cards/91231901.jpg",
-                    image_url_small: "https://images.ygoprodeck.com/images/cards_small/91231901.jpg",
-                    image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/91231901.jpg",
-                },
-            ],
+        [
+            {
+                image_url: "https://images.ygoprodeck.com/images/cards/91231901.jpg",
+                image_url_small: "https://images.ygoprodeck.com/images/cards_small/91231901.jpg",
+                image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/91231901.jpg",
+            },
+        ],
     },
     {
         name: '"A" Cell Scatter Burst',
@@ -59,15 +62,15 @@ let cards = [
         archetype: "Alien",
         ygoprodeck_url: "https://ygoprodeck.com/card/a-cell-scatter-burst-9737",
         card_images:
-            [
-                {
-                    image_url: "https://images.ygoprodeck.com/images/cards/73262676.jpg",
-                    image_url_small: "https://images.ygoprodeck.com/images/cards_small/73262676.jpg",
+        [
+            {
+                image_url: "https://images.ygoprodeck.com/images/cards/73262676.jpg",
+                image_url_small: "https://images.ygoprodeck.com/images/cards_small/73262676.jpg",
                     image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/73262676.jpg",
                 },
             ],
-    },
-    {
+        },
+        {
         name: '"Infernoble Arms - Almace"',
         type: "Spell Card",
         frameType: "spell",
@@ -93,13 +96,13 @@ let cards = [
         archetype: "Noble Knight",
         ygoprodeck_url: "https://ygoprodeck.com/card/infernoble-arms-durendal-10991",
         card_images:
-            [
-                {
-                    image_url: "https://images.ygoprodeck.com/images/cards/37478723.jpg",
-                    image_url_small: "https://images.ygoprodeck.com/images/cards_small/37478723.jpg",
-                    image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/37478723.jpg",
-                },
-            ],
+        [
+            {
+                image_url: "https://images.ygoprodeck.com/images/cards/37478723.jpg",
+                image_url_small: "https://images.ygoprodeck.com/images/cards_small/37478723.jpg",
+                image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/37478723.jpg",
+            },
+        ],
     },
     {
         name: '"Infernoble Arms - Hauteclere"',
@@ -110,13 +113,13 @@ let cards = [
         archetype: "Noble Knight",
         ygoprodeck_url: "https://ygoprodeck.com/card/infernoble-arms-hauteclere-10990",
         card_images:
-            [
-                {
-                    image_url: "https://images.ygoprodeck.com/images/cards/64867422.jpg",
-                    image_url_small: "https://images.ygoprodeck.com/images/cards_small/64867422.jpg",
-                    image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/64867422.jpg",
-                },
-            ],
+        [
+            {
+                image_url: "https://images.ygoprodeck.com/images/cards/64867422.jpg",
+                image_url_small: "https://images.ygoprodeck.com/images/cards_small/64867422.jpg",
+                image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/64867422.jpg",
+            },
+        ],
     },
     {
         name: '"Infernoble Arms - Joyeuse"',
@@ -127,13 +130,13 @@ let cards = [
         archetype: "Noble Knight",
         ygoprodeck_url: "https://ygoprodeck.com/card/infernoble-arms-joyeuse-10989",
         card_images:
-            [
-                {
-                    image_url: "https://images.ygoprodeck.com/images/cards/90861137.jpg",
-                    image_url_small: "https://images.ygoprodeck.com/images/cards_small/90861137.jpg",
-                    image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/90861137.jpg",
-                },
-            ],
+        [
+            {
+                image_url: "https://images.ygoprodeck.com/images/cards/90861137.jpg",
+                image_url_small: "https://images.ygoprodeck.com/images/cards_small/90861137.jpg",
+                image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/90861137.jpg",
+            },
+        ],
     },
     {
         name: "1st Movement Solo",
@@ -144,23 +147,23 @@ let cards = [
         archetype: "Melodious",
         ygoprodeck_url: "https://ygoprodeck.com/card/1st-movement-solo-3775",
         card_images:
-            [
-                {
-                    image_url: "https://images.ygoprodeck.com/images/cards/44256816.jpg",
-                    image_url_small: "https://images.ygoprodeck.com/images/cards_small/44256816.jpg",
-                    image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/44256816.jpg",
-                },
+        [
+            {
+                image_url: "https://images.ygoprodeck.com/images/cards/44256816.jpg",
+                image_url_small: "https://images.ygoprodeck.com/images/cards_small/44256816.jpg",
+                image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/44256816.jpg",
+            },
             ],
-    },
-    {
-        name: "3-Hump Lacooda",
-        type: "Effect Monster",
-        frameType: "effect",
-        desc: 'If there are 3 face-up "3-Hump Lacooda" cards on your side of the field, Tribute 2 of them to draw 3 cards.',
-        race: "Beast",
-        attribute: "EARTH",
-        ygoprodeck_url: "https://ygoprodeck.com/card/3-hump-lacooda-7280",
-        card_images:
+        },
+        {
+            name: "3-Hump Lacooda",
+            type: "Effect Monster",
+            frameType: "effect",
+            desc: 'If there are 3 face-up "3-Hump Lacooda" cards on your side of the field, Tribute 2 of them to draw 3 cards.',
+            race: "Beast",
+            attribute: "EARTH",
+            ygoprodeck_url: "https://ygoprodeck.com/card/3-hump-lacooda-7280",
+            card_images:
             [
                 {
                     image_url: "https://images.ygoprodeck.com/images/cards/86988864.jpg",
@@ -168,7 +171,9 @@ let cards = [
                     image_url_cropped: "https://images.ygoprodeck.com/images/cards_cropped/86988864.jpg",
                 },
             ],
-    },
-];
-
-export default cards
+        },
+    ],
+    apiCards: []
+    
+})
+    export default myData
