@@ -19,8 +19,8 @@ export default {
     getValue(){
       myData.apiCards =[]
       console.log(myData.archetype)
-      axios.get(`https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=` + myData.archetype).then((result) => {
-          let card = result.data;
+       axios.get(`https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=` + myData.archetype).then((result) => {
+           let card = result.data;
           myData.apiCards.push(card.data)
           console.log(myData.apiCards[0], "apiCards")
         });
@@ -30,6 +30,11 @@ export default {
   },
   mounted() {
     // axios.get(`https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=85&race=dragon`).then((result) => {
+    //       let card = result.data;
+    //       myData.apiCards.push(card.data)
+    //       console.log(myData.apiCards[0], "apiCards")
+    //     });
+    // axios.get(`https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=` + myData.archetype).then((result) => {
     //       let card = result.data;
     //       myData.apiCards.push(card.data)
     //       console.log(myData.apiCards[0], "apiCards")
@@ -44,10 +49,12 @@ export default {
 
 <template>
   <main class="container myBg">
+    <button @click="getValue">Scegli il tuo set</button> 
     <section class="d-flex justify-content-between flex-wrap p-3">
       <!-- <AppMainCard v-for="card in myData.cards" :cards="card"/> -->
-       <h1 class="col-12">BONUS DA 20 CARTE A PARTIRE DALLA 15ESIMA CON CHIAMATA AXIOS</h1>
-       <button @click="getValue">clicca</button>
+      
+       <h1 class="col-12">ho trovato {{ myData.apiCards[0].length }} carte</h1>
+       
 
          <!-- <pre v-for="element in myData.apiCards">{{ element }}</pre>  -->
          <AppMainCardBonusOne v-for="card in myData.apiCards[0]" :cardss="card"/>

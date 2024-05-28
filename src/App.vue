@@ -12,7 +12,7 @@ export default {
   },
   data() {
     return {
-      myData
+      myData,
 
     }
   },
@@ -24,10 +24,14 @@ export default {
 
   },
   mounted() {
+   
     axios.get(`https://db.ygoprodeck.com/api/v7/archetypes.php`).then((result) => {
-          myData.archetypeList= result.data;
-          console.log(myData.archetypeList)
-        });    
+      myData.archetypeList = result.data;
+      console.log(myData.archetypeList)
+      myData.archetype = myData.archetypeList[0]
+      console.log(myData.archetype.archetype_name)
+    });  
+          
   }
 }
 </script>
@@ -35,7 +39,7 @@ export default {
 <template>
   <AppHeader /> 
   <section class="container">
-    <select name="Archetype"id="" class="w-25" v-model="myData.archetype"> 
+    <select name="Archetype" id="" class="w-25" v-model="myData.archetype"> 
       <option v-for="element of myData.archetypeList">{{ element.archetype_name }}</option>
     </select> 
   </section>
