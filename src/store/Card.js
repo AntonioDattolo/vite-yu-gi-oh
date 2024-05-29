@@ -175,7 +175,7 @@ let myData = reactive({
     ],
     apiCards: [],
     archetypeList :[],
-    archetype:[]
+    archetype: null
     
 })
     export default myData
